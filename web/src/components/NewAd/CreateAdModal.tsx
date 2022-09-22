@@ -50,14 +50,12 @@ export function CreateAdModal() {
                 useVoiceChannel: useVoiceChannel
             })
 
+            setIsOpen(false);
             alert('Anúncio criado com sucesso!')
         } catch (err) {
             console.log(err);
             alert('Erro ao criar o anúncio')
-        } finally {
-            setIsOpen(false);
-        }
-
+        } 
     }
 
     return (
